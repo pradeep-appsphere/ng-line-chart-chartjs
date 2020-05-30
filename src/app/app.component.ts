@@ -28,10 +28,8 @@ public lineChartOptions: any = {
   },
   legend: {
         display: true,
-        position:'right',
-        
-        labels: {
-          pointStyle:'ss',
+        position:'right',        
+        labels: {          
             fontColor: '#444',
             boxWidth:12,
             padding:8,
