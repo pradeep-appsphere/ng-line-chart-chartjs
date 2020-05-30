@@ -31,7 +31,9 @@ public lineChartOptions: any = {
   legend: {
         display: true,
         position:'right',
+        
         labels: {
+          pointStyle:'ss',
             fontColor: '#444',
             boxWidth:12,
             padding:8,
@@ -116,12 +118,12 @@ public lineChartType = 'line';
 
 
 // Prepare dynamic data xAxis Label
-public lineChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+public lineChartLabels: Array<any> = ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'];
  // Prepare dynamic data yAxis line
 lineChartData: Array<any> = [
       {
         label: '2020',                       
-        data: [65, 59, 80, 81, 56, 55, 40],
+        data: [0, 4.4, 4.5, 4, 0, 4, 7],
         fill: false,
         backgroundColor:'rgba(0,0,0,0.7)',
         lineTension: 0, // curve or rounded line        
@@ -131,7 +133,16 @@ lineChartData: Array<any> = [
       },
       {
         label: '2019',                
-        data: [90, 73, 3, 44, 33, 66, 90],
+        data: [2, 1.4, 4, 3, 2, 3, 3, 5],
+        fill: false,
+        lineTension: 0, // curve or rounded line        
+        pointHoverRadius: 4,
+        pointHoverBorderWidth: 2,
+        pointRadius: 3, // dot between curve          
+      },
+      {
+        label: '2018',                
+        data: [5, 3.4, 4, 4, 3, 5.5, 4, 6],
         fill: false,
         lineTension: 0, // curve or rounded line        
         pointHoverRadius: 4,
